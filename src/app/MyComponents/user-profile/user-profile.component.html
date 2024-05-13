@@ -1,0 +1,59 @@
+<!--User Profile starts-->
+
+<div *ngIf="userData" class="w-full flex flex-col items-center mt-3 lg:flex-row lg:items-start lg:p-6 p-6 text-white">
+    
+    <!--left part start-->
+    <div class="lg:w-1/3 lg:flex-row flex-col my-auto">
+        <div class="w-full lg:justify-end justify-center flex">
+            <img [src]="userData.avatar_url" alt="User Avatar" class="w-24 h-24 rounded-full lg:w-48 lg:h-48 justify-end">
+        </div>
+        <a [href]="userData.html_url" target="_blank" class="text-white hover:underline mt-2 block lg:text-end">{{ userData.html_url }}</a>
+        
+    </div>
+    <!--left part ends-->
+    
+    <!--Right part start-->
+    <div class="lg:w-2/3 lg:px-12 lg:pr-48 gap-2">
+        <h2 class="text-3xl mt-2">{{ userData.login }}</h2>
+        <div class='flex flex-row items-center gap-1'>
+            <img class = 'h-3 w-3 p-0' src = '../../../assets/icons/comment.svg'>
+            <p class="text-center mt-2 lg:text-left">{{ userData.bio || 'No bio available' }}</p>
+        </div>
+        <div class="mt-4 grid grid-cols-2 gap-1 w-2/3">
+            <div>Followers: {{ userData.followers }}</div>
+            <div>Following: {{ userData.following }}</div>
+            <div>Gists: {{ userData.public_gists }}</div>
+            <div>Repositories: {{ userData.public_repos }}</div>
+        </div>
+        <div class="mt-4">
+            <div class='flex flex-row items-center gap-1 '>
+                <img class = 'h-3 w-3 p-0' src = '../../../assets/icons/blogIcon.png'>
+                <p>blog: {{ userData.blog || 'Not Available' }}</p>
+            </div>
+            <div class='flex flex-row items-center gap-1'>
+                <img class = 'h-3 w-3 p-0' src = '../../../assets/icons/emailIcon.png'>
+                <p>Email: {{ userData.email || 'Not Available' }}</p>
+            </div>
+            <div class='flex flex-row items-center gap-1'>
+                <img class = 'h-3 w-3 p-0' src = '../../../assets/icons/LocationIcon.svg'>
+                <p>Location: {{ userData.location || 'Not Available' }}</p>
+            </div>
+            <div class='flex flex-row items-center gap-1'>
+                <img class = 'h-3 w-3 p-0' src = '../../../assets/icons/companyIcon.png'>
+                <p>Company: {{ userData.company || 'Not Available' }}</p>
+            </div>
+            <div class='flex flex-row items-center gap-1'>
+                <img class = 'h-3 w-3 p-0' src = '../../../assets/icons/LinkedInIcon.svg'>
+                <p>linkedIn: {{ userData.linkedin_username || 'Not Available' }}</p>
+            </div>
+            <div class='flex flex-row items-center gap-1'>
+                <img class = 'h-3 w-3 p-0' src = '../../../assets/icons/twitterIcon.png'>
+                <p>Twitter: &nbsp;{{ userData.twitter_username || 'Not Available' }}</p>
+            </div>
+            
+        </div>
+    </div>
+    <!--Right part ends-->
+</div>
+
+<!--User Profile ends-->

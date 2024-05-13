@@ -1,0 +1,18 @@
+<!--user-repo starts-->
+
+<div *ngIf="repo" class="border p-4 rounded-md bg-custom-purple-100 ">
+    <h2 class="text-xl font-bold mb-2">
+        <a [href]="repo.html_url" target="_blank">{{ repo.name }}</a>
+    </h2>
+    <p class="mb-2 line-clamp-1 overflow-hidden overflow-ellipsis">{{ repo.description || 'No description available' }}</p>
+    <div class="flex flex-wrap align-middle">
+        <span class="mr-2">Topics:</span>
+        <span *ngFor="let topic of repo.topics"  class="bg-fyle-red text-white px-2 py-1 rounded-md mr-2 mb-2 border p-4">{{repo.topics}}</span>
+    </div>
+    <div class="flex flex-wrap align-middle">
+        <span class="mr-2">Languages:</span>
+        <span *ngIf="repo.language" class="bg-fyle-red text-white px-2 py-1 rounded-md mr-2 mb-2 border p-4">{{repo.language}}</span>
+    </div>
+</div>
+
+<!--user-repo ends-->
