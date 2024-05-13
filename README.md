@@ -36,6 +36,6 @@ To run the application, you need to install Node.js and Angular CLI on your mach
 ## Testing
 
 To run the tests, you can use the `ng test` or `npm test` command in your terminal.
-![Search User](/src/assets/screenshots/4.png)
+![Search User](/src/assets/UI%20ScreenShots/66.png)
 *Passes all 8 tests with 100% code coverage*
 The application includes unit tests for each component. 
