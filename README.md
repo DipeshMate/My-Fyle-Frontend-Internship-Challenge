@@ -1,3 +1,8 @@
+# Deployment Link
+Here ia a Demo Link of this Assignment You can Check this out on the below Link
+
+https://my-fyle-frontend-internship-challenge.vercel.app/
+
 # GitHub User Profile - A Fyle Frontend Internship Assignment
 
 This is a single-page application (SPA) that allows you to search for GitHub users and view their profile information and repositories. displays the public Github repositories belonging to the user.
@@ -39,7 +44,3 @@ To run the tests, you can use the `ng test` or `npm test` command in your termin
 ![Search User](/src/assets/UI%20ScreenShots/66.png)
 *Passes all 8 tests with 100% code coverage*
 The application includes unit tests for each component. 
-
-# Deployment Link
-Here ia a Demo Link of this Assignment You can Check this out on the below Link
-https://my-fyle-frontend-internship-challenge.vercel.app/
